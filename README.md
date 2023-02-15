@@ -29,13 +29,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: haya14busa/action-workflow_run-status@v1
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: exit 0
 
   post-test-failure:
     runs-on: ubuntu-latest
     steps:
       - uses: haya14busa/action-workflow_run-status@v1
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: exit 1
 ```
